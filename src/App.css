@@ -13,15 +13,33 @@
   border: 5px;
   border-radius: 10px;
   border-color: rgb(191, 198, 206);
-  font-size: 60px;
+  font-size: 60px;  
   font-weight: 900;
   margin: 0;
   padding-top: 50px;
+  text-align: center;
+}
+
+@media (max-width :550px){
+.welcome {
+  font-size: 42px;
+  margin-left: 4px;
+  margin-right: 4px;
+  text-align: center;
+}
+
+.desc{
+  font-size: medium;
+  margin-left: 4px;
+  margin-right: 4px;
+  text-align: center;
+}
 }
 
 .desc {
   font-size: x-large;
   margin: 0;
+  
 }
 
 .login-button{
