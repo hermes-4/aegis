@@ -1,22 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import LoginButton from "./auth/login";
+import { Route, Routes } from "react-router-dom";
+import Welcome from "./pages/Welcome";
 
-function App() {
-  return (
-    <div>
-      <div className='header'>
-
-      </div>
-      <div className="app">
-       <p className='welcome'>Welcome to Aegis. </p>
-        <p className='desc'>A secure platform for storing your passwords</p>
-        <div className='login-div'>
-          <LoginButton/>
-        </div>
-    </div>
-    </div>
-  );
+function App(){
+  return(
+    <>
+    <Routes>
+      <Route path="/" element={<Welcome/>}/>
+      <Route path=""/>
+    </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
