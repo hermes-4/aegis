@@ -5,7 +5,7 @@ const aegisRouter = require("./routes/routes.js");
 const connect_db = require("./db/db.js");
 
 require("dotenv").config();
-const port = process.env.PORT;
+const port = process.env.PORT || 3003;
 
 app.use(express.json());
 app.use("/aegis/v1", aegisRouter);
