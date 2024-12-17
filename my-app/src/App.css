@@ -1,0 +1,36 @@
+.app {
+
+}
+
+.welcome {
+  font-size: 62px;
+  font-weight: 800;
+  color: rgb(189, 187, 187);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.body {
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+  border: 10px solid rgb(243, 243, 243);
+  border-radius: 25px;
+}
+
+.body-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-new {
+  background-color: rgb(225, 225, 225);
+  border-radius: 8px;
+  width: max-content;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
