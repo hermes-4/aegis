@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import AddNewPassword from './components/AddNew.tsx';
 
 function App() {
   return (
@@ -8,12 +9,13 @@ function App() {
       WELCOME
       </header>
       <div className="body">
-        <div className="body-top">
+        {/* <div className="body-top">
           <div></div>
-          <div className="add-new">
+          <button className="add-new-button">
           Add New Password
-          </div>
-        </div>
+          </button>
+        </div> */}
+        <AddNewPassword/>
       </div>
     </div>
   );
