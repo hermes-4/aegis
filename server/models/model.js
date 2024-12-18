@@ -24,6 +24,8 @@ const SignUpModel = mongoose.Schema({
   },
 });
 
+
+
 const ItemModel = mongoose.Schema({
   name: { type: String, required: true },
   password: { type: String, required: true },
