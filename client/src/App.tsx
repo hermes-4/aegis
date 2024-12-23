@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import AddNewPassword from './components/AddNew.tsx';
+// import AddNewItemForm from './components/AddNewItemForm.tsx';
+import AddNewItemButton from './components/AddNewItemButton.tsx';
 
 function App() {
   return (
@@ -11,11 +12,9 @@ function App() {
       <div className="body">
         <div className="body-top">
           <div></div>
-          <button className="add-new-button">
-          Add New Password
-          </button>
+         <AddNewItemButton/>
         </div>
-        <AddNewPassword/>
+        {/* <AddNewItemForm/> */}
       </div>
     </div>
   );
