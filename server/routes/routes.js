@@ -8,6 +8,8 @@ const {
     Update_Item,
     Delete_Item
 } = require("../controllers/routes")
-router.route("/").get(Log_In).post(Sign_Up).post(Add_Item)
-router.route("/:id").get(Get_Item).put(Update_Item).delete(Delete_Item)
+router.route("/login").get(Log_In)
+router.route("/signup").post(Sign_Up)
+router.route("/add_new").post(Add_Item)
+router.route("/item/:id").get(Get_Item).put(Update_Item).delete(Delete_Item)
 module.exports = router

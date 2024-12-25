@@ -41,7 +41,7 @@ const Log_In = async (req, res) => {
   try {
     const login = await Login.find({
       username: req.body.username,
-      password: req.body.username,
+      password: req.body.password,
     });
     if (!login) {
       return res.status(401).json({ message: "Invalid login credentials" });
@@ -59,7 +59,7 @@ const Add_Item = async (req, res) => {
     const hashed = await bcrypt.hash(password, salt);
 
     const item = await Item.create({
-      name: req.body.username,
+      name: req.body.name,
       password: hashed,
     });
 
