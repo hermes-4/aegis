@@ -8,6 +8,8 @@ require("dotenv").config();
 const port = process.env.PORT || 3003;
 
 app.use(express.json());
+
+// app.use(express.json());
 app.use("/aegis/v1", aegisRouter);
 
 const start = async () => {

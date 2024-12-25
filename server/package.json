@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "build": "echo 'No build step required'"
   },
   "author": "",
@@ -14,7 +14,10 @@
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.5.1",
-    "nodemon": "^3.1.4"
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
+
 }
